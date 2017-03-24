@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0564B761E859FB0006E8BEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0564B751E859FB0006E8BEA /* AppDelegate.swift */; };
+		F0564B781E859FB0006E8BEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0564B771E859FB0006E8BEA /* ViewController.swift */; };
+		F0564B7B1E859FB0006E8BEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0564B791E859FB0006E8BEA /* Main.storyboard */; };
+		F0564B7E1E859FB0006E8BEA /* SherpanyGermain.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0564B7C1E859FB0006E8BEA /* SherpanyGermain.xcdatamodeld */; };
+		F0564B801E859FB0006E8BEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0564B7F1E859FB0006E8BEA /* Assets.xcassets */; };
+		F0564B831E859FB0006E8BEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0564B811E859FB0006E8BEA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F0564B721E859FB0006E8BEA /* SherpanyGermain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SherpanyGermain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0564B751E859FB0006E8BEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0564B771E859FB0006E8BEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0564B7A1E859FB0006E8BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0564B7D1E859FB0006E8BEA /* SherpanyGermain.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SherpanyGermain.xcdatamodel; sourceTree = "<group>"; };
+		F0564B7F1E859FB0006E8BEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0564B821E859FB0006E8BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0564B841E859FB0006E8BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0564B6F1E859FB0006E8BEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0564B691E859FB0006E8BEA = {
+			isa = PBXGroup;
+			children = (
+				F0564B741E859FB0006E8BEA /* SherpanyGermain */,
+				F0564B731E859FB0006E8BEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0564B731E859FB0006E8BEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0564B721E859FB0006E8BEA /* SherpanyGermain.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0564B741E859FB0006E8BEA /* SherpanyGermain */ = {
+			isa = PBXGroup;
+			children = (
+				F0564B751E859FB0006E8BEA /* AppDelegate.swift */,
+				F0564B771E859FB0006E8BEA /* ViewController.swift */,
+				F0564B791E859FB0006E8BEA /* Main.storyboard */,
+				F0564B7F1E859FB0006E8BEA /* Assets.xcassets */,
+				F0564B811E859FB0006E8BEA /* LaunchScreen.storyboard */,
+				F0564B841E859FB0006E8BEA /* Info.plist */,
+				F0564B7C1E859FB0006E8BEA /* SherpanyGermain.xcdatamodeld */,
+			);
+			path = SherpanyGermain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0564B711E859FB0006E8BEA /* SherpanyGermain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0564B871E859FB0006E8BEA /* Build configuration list for PBXNativeTarget "SherpanyGermain" */;
+			buildPhases = (
+				F0564B6E1E859FB0006E8BEA /* Sources */,
+				F0564B6F1E859FB0006E8BEA /* Frameworks */,
+				F0564B701E859FB0006E8BEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SherpanyGermain;
+			productName = SherpanyGermain;
+			productReference = F0564B721E859FB0006E8BEA /* SherpanyGermain.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0564B6A1E859FB0006E8BEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Germain;
+				TargetAttributes = {
+					F0564B711E859FB0006E8BEA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 86Z2B9S269;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F0564B6D1E859FB0006E8BEA /* Build configuration list for PBXProject "SherpanyGermain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0564B691E859FB0006E8BEA;
+			productRefGroup = F0564B731E859FB0006E8BEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0564B711E859FB0006E8BEA /* SherpanyGermain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0564B701E859FB0006E8BEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0564B831E859FB0006E8BEA /* LaunchScreen.storyboard in Resources */,
+				F0564B801E859FB0006E8BEA /* Assets.xcassets in Resources */,
+				F0564B7B1E859FB0006E8BEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0564B6E1E859FB0006E8BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0564B781E859FB0006E8BEA /* ViewController.swift in Sources */,
+				F0564B761E859FB0006E8BEA /* AppDelegate.swift in Sources */,
+				F0564B7E1E859FB0006E8BEA /* SherpanyGermain.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F0564B791E859FB0006E8BEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0564B7A1E859FB0006E8BEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0564B811E859FB0006E8BEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0564B821E859FB0006E8BEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0564B851E859FB0006E8BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F0564B861E859FB0006E8BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0564B881E859FB0006E8BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 86Z2B9S269;
+				INFOPLIST_FILE = SherpanyGermain/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.treeinthefog.SherpanyGermain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F0564B891E859FB0006E8BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 86Z2B9S269;
+				INFOPLIST_FILE = SherpanyGermain/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.treeinthefog.SherpanyGermain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0564B6D1E859FB0006E8BEA /* Build configuration list for PBXProject "SherpanyGermain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0564B851E859FB0006E8BEA /* Debug */,
+				F0564B861E859FB0006E8BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0564B871E859FB0006E8BEA /* Build configuration list for PBXNativeTarget "SherpanyGermain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0564B881E859FB0006E8BEA /* Debug */,
+				F0564B891E859FB0006E8BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F0564B7C1E859FB0006E8BEA /* SherpanyGermain.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F0564B7D1E859FB0006E8BEA /* SherpanyGermain.xcdatamodel */,
+			);
+			currentVersion = F0564B7D1E859FB0006E8BEA /* SherpanyGermain.xcdatamodel */;
+			path = SherpanyGermain.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F0564B6A1E859FB0006E8BEA /* Project object */;
+}
