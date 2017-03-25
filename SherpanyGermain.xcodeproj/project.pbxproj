@@ -13,6 +13,8 @@
 		F0564B7E1E859FB0006E8BEA /* SherpanyGermain.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0564B7C1E859FB0006E8BEA /* SherpanyGermain.xcdatamodeld */; };
 		F0564B801E859FB0006E8BEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0564B7F1E859FB0006E8BEA /* Assets.xcassets */; };
 		F0564B831E859FB0006E8BEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0564B811E859FB0006E8BEA /* LaunchScreen.storyboard */; };
+		F0564B8B1E85A758006E8BEA /* NetworkDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0564B8A1E85A758006E8BEA /* NetworkDataHelper.swift */; };
+		F0564BB01E86801A006E8BEA /* MySplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0564BAF1E86801A006E8BEA /* MySplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F0564B7F1E859FB0006E8BEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0564B821E859FB0006E8BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0564B841E859FB0006E8BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0564B8A1E85A758006E8BEA /* NetworkDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataHelper.swift; sourceTree = "<group>"; };
+		F0564BAF1E86801A006E8BEA /* MySplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				F0564B751E859FB0006E8BEA /* AppDelegate.swift */,
 				F0564B771E859FB0006E8BEA /* ViewController.swift */,
+				F0564B8A1E85A758006E8BEA /* NetworkDataHelper.swift */,
+				F0564BAF1E86801A006E8BEA /* MySplitViewController.swift */,
 				F0564B791E859FB0006E8BEA /* Main.storyboard */,
 				F0564B7F1E859FB0006E8BEA /* Assets.xcassets */,
 				F0564B811E859FB0006E8BEA /* LaunchScreen.storyboard */,
@@ -141,7 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0564B781E859FB0006E8BEA /* ViewController.swift in Sources */,
+				F0564BB01E86801A006E8BEA /* MySplitViewController.swift in Sources */,
 				F0564B761E859FB0006E8BEA /* AppDelegate.swift in Sources */,
+				F0564B8B1E85A758006E8BEA /* NetworkDataHelper.swift in Sources */,
 				F0564B7E1E859FB0006E8BEA /* SherpanyGermain.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
