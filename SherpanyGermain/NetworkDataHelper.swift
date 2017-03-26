@@ -23,15 +23,15 @@ class NetworkDataHelper {
     let albumUrlPath = "http://jsonplaceholder.typicode.com/albums/"
     let photoUrlPath = "http://jsonplaceholder.typicode.com/photos/"
     
-    static var postData: Data?
-    static var userData: Data?
-    static var albumData: Data?
-    static var photoData: Data?
+    var postData: Data?
+    var userData: Data?
+    var albumData: Data?
+    var photoData: Data?
 
-    static var AppData = [DataKind:Data]()
+    var AppData = [DataKind:Data]()
     
     
-    static func loadAllData() {
+    func loadAllData() {
         self.loadData(dataKind: .Post)
         self.loadData(dataKind: .User)
         self.loadData(dataKind: .Album)
@@ -39,7 +39,7 @@ class NetworkDataHelper {
     }
     
     
-    static func loadData(dataKind: DataKind) {
+    func loadData(dataKind: DataKind) {
         let urlPath = "http://jsonplaceholder.typicode.com/\(dataKind.rawValue)/"
         
         let url = URL(string: urlPath)
@@ -73,7 +73,7 @@ class NetworkDataHelper {
 
     //Process album JSON
     //
-    static func loadJSON(dataKind: DataKind) {
+    func loadJSON(dataKind: DataKind) {
         print("loading JSON of \(dataKind.rawValue)!")
         if let theData = self.AppData[dataKind] {
             //let readOptions = JSONSerialization.ReadingOptions.mutableContainers
