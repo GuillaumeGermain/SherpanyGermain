@@ -28,7 +28,7 @@ class NetworkDataHelper {
     static var albumData: Data?
     static var photoData: Data?
 
-//    static var AppData = [DataKind:Data]()
+    static var AppData = [DataKind:Data]()
     
     
     static func loadAllData() {
@@ -58,18 +58,11 @@ class NetworkDataHelper {
                     print("***********")
                     print(returnString)
                 }
-                switch dataKind {
-                case .Post:
-                    self.postData = dataVar
-                case .User:
-                    self.userData = dataVar
-                case .Album:
-                    self.albumData = dataVar
-                    self.loadAlbums()
-                case .Photo:
-                    self.photoData = dataVar
-                }
+                
+                self.AppData[dataKind] = dataVar
+                
                 print(dataKind.rawValue + " loaded!")
+                self.loadJSON(dataKind: dataKind)
             } else if let error = error {
                 print(error)
             }
@@ -77,20 +70,15 @@ class NetworkDataHelper {
         task.resume()
     }
 
-/*
-     static var postData = [Any]()
-     static var userData = [Any]()
-     static var albumData = [Any]()
-     static var photoData = [Any]()
-*/
 
     //Process album JSON
     //
-    static func loadAlbums() {
-        if let albumData = self.albumData {
+    static func loadJSON(dataKind: DataKind) {
+        print("loading JSON of \(dataKind.rawValue)!")
+        if let theData = self.AppData[dataKind] {
             //let readOptions = JSONSerialization.ReadingOptions.mutableContainers
             do {
-                let theResult = try JSONSerialization.jsonObject(with: albumData, options: []) as! [AnyObject]
+                let theResult = try JSONSerialization.jsonObject(with: theData, options: []) as! [AnyObject]
                 print("------------")
                 print(theResult)
                 
