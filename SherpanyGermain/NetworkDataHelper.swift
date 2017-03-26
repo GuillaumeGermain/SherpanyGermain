@@ -28,12 +28,6 @@ class NetworkDataHelper {
     static var albumJsonString = ""
     static var photoJsonString = ""
 
-    static var postData = [Dictionary]
-    static var userData = [Dictionary]
-    static var albumData = [Dictionary]
-    static var photoData = [Dictionary]
-
-    
     static func loadAllData() {
         self.loadData(dataKind: .Post)
         self.loadData(dataKind: .User)
@@ -57,7 +51,9 @@ class NetworkDataHelper {
 //                print(responseVar)
                 returnString = String(data: dataVar, encoding: .utf8)!
                 print("***********")
-                print(returnData)
+                print(dataKind.rawValue)
+                print("***********")
+                print(returnString)
                 
                 switch dataKind {
                 case .Post:
@@ -77,7 +73,15 @@ class NetworkDataHelper {
         task.resume()
         
     }
- 
+
+    /*
+     static var postData = [Dictionary]
+     static var userData = [Dictionary]
+     static var albumData = [Dictionary]
+     static var photoData = [Dictionary]
+     */
+    
+/*
     static func processJson(dataKind: DataKind) {
         switch dataKind {
         case .Post:
@@ -90,7 +94,7 @@ class NetworkDataHelper {
             self.photoJsonString = returnString
         }
     }
-
+*/
 
 }
 
