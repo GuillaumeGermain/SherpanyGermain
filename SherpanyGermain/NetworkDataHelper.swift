@@ -23,11 +23,14 @@ class NetworkDataHelper {
     let albumUrlPath = "http://jsonplaceholder.typicode.com/albums/"
     let photoUrlPath = "http://jsonplaceholder.typicode.com/photos/"
     
-    static var postJsonString = ""
-    static var userJsonString = ""
-    static var albumJsonString = ""
-    static var photoJsonString = ""
+    static var postData: Data?
+    static var userData: Data?
+    static var albumData: Data?
+    static var photoData: Data?
 
+//    static var AppData = [DataKind:Data]()
+    
+    
     static func loadAllData() {
         self.loadData(dataKind: .Post)
         self.loadData(dataKind: .User)
@@ -42,28 +45,29 @@ class NetworkDataHelper {
         let url = URL(string: urlPath)
         let request = URLRequest(url: url!)
         
-        var returnString: String = ""
-
-        
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             if let responseVar = response, let dataVar = data {
+                
+                //Debugging
 //                print("***********") //response status
 //                print(responseVar)
-                returnString = String(data: dataVar, encoding: .utf8)!
-                print("***********")
-                print(dataKind.rawValue)
-                print("***********")
-                print(returnString)
-                
+                if false {
+                    let returnString = String(data: dataVar, encoding: .utf8)!
+                    print("***********")
+                    print(dataKind.rawValue)
+                    print("***********")
+                    print(returnString)
+                }
                 switch dataKind {
                 case .Post:
-                    self.postJsonString = returnString
+                    self.postData = dataVar
                 case .User:
-                    self.userJsonString = returnString
+                    self.userData = dataVar
                 case .Album:
-                    self.albumJsonString = returnString
+                    self.albumData = dataVar
+                    self.loadAlbums()
                 case .Photo:
-                    self.photoJsonString = returnString
+                    self.photoData = dataVar
                 }
                 print(dataKind.rawValue + " loaded!")
             } else if let error = error {
@@ -71,30 +75,32 @@ class NetworkDataHelper {
             }
         }
         task.resume()
-        
     }
 
-    /*
-     static var postData = [Dictionary]
-     static var userData = [Dictionary]
-     static var albumData = [Dictionary]
-     static var photoData = [Dictionary]
-     */
-    
 /*
-    static func processJson(dataKind: DataKind) {
-        switch dataKind {
-        case .Post:
-            self.postJsonString = returnString
-        case .User:
-            self.userJsonString = returnString
-        case .Album:
-            self.albumJsonString = returnString
-        case .Photo:
-            self.photoJsonString = returnString
+     static var postData = [Any]()
+     static var userData = [Any]()
+     static var albumData = [Any]()
+     static var photoData = [Any]()
+*/
+
+    //Process album JSON
+    //
+    static func loadAlbums() {
+        if let albumData = self.albumData {
+            //let readOptions = JSONSerialization.ReadingOptions.mutableContainers
+            do {
+                let theResult = try JSONSerialization.jsonObject(with: albumData, options: []) as! [AnyObject]
+                print("------------")
+                print(theResult)
+                
+            } catch {
+                print(error)
+            }
+            
         }
     }
-*/
+    
 
 }
 
