@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import CoreData
 
 enum DataKind:String {
     case post = "posts"
@@ -81,12 +81,74 @@ class NetworkDataHelper {
                 let theResult = try JSONSerialization.jsonObject(with: theData, options: []) as! [AnyObject]
                 print("------------")
                 print(theResult)
-                
+                saveData(dataKind: dataKind, JSONObject: theResult)
             } catch {
                 print(error)
             }
             
         }
+    }
+
+    
+    //TODO save first level of data
+    func saveData(dataKind: DataKind, JSONObject: [AnyObject]) {
+        
+        switch dataKind {
+        case .user:
+            //JSONObject is an array of AnyObjects, each being a dictionary
+            for aDict in JSONObject {
+                let phone = aDict["phone"]
+                let email = aDict["email"]
+                let name = aDict["name"]
+                let website = aDict["website"]
+                
+                let aUser:User = NSEntityDescription.insertNewObject(forEntityName: "User", into: DBController.getContext()) as! User
+                aUser.phone = phone as? String
+                aUser.email = email as? String
+                aUser.name = name as? String
+                aUser.website = website as? String
+            }
+        case .post:
+            for aDict in JSONObject {
+                let aUserPost:UserPost = NSEntityDescription.insertNewObject(forEntityName: "UserPost", into: DBController.getContext()) as! UserPost
+                aUserPost.body = aDict["body"] as? String
+//                aUserPost.id = aDict["id"]
+                aUserPost.title = aDict["title"]  as? String
+//                aUserPost.userID = aDict["UserId"]
+            }
+        case .photo:
+            break
+        case .album:
+            for aDict in JSONObject {
+                let anAlbum:Album = NSEntityDescription.insertNewObject(forEntityName: "Album", into: DBController.getContext()) as! Album
+//                anAlbum.id = aDict["id"]
+                anAlbum.title = aDict["title"] as? String
+//                anAlbum.userId = aDict["userId"]
+            }
+        }
+        
+//Code to fetch data
+        /*
+         
+         let fetchRequest: NSFetchRequest<User> = User.fetchRequest()
+         
+         do {
+         let searchResult = try DBController.getContext().fetch(fetchRequest)
+         print("number of results: \(searchResult.count)")
+         
+         for result in searchResult as [User] {
+         if let email = result.email, let username = result.username {
+         print("\(result.id) \(email) \(username)")
+         }
+         }
+         } catch {
+         print(error)
+         }
+         */
+    }
+    
+    func saveUser() {
+        
     }
     
 

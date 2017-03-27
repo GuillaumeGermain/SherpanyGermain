@@ -13,8 +13,8 @@ class DBController {
     
     // MARK: - Core Data stack
     
-    private init(){
-        
+    class func getContext() -> NSManagedObjectContext {
+        return persistentContainer.viewContext
     }
     
     

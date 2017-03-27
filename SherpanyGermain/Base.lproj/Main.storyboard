@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="bWZ-SC-BBX">
             <objects>
-                <viewController id="cY5-ta-iT1" sceneMemberID="viewController">
+                <viewController id="cY5-ta-iT1" customClass="ViewController" customModule="SherpanyGermain" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BpI-t3-4sJ"/>
                         <viewControllerLayoutGuide type="bottom" id="3o7-IY-DiH"/>
