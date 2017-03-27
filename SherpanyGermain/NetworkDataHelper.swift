@@ -10,10 +10,10 @@ import Foundation
 
 
 enum DataKind:String {
-    case Post = "posts"
-    case User = "users"
-    case Album = "albums"
-    case Photo = "photos"
+    case post = "posts"
+    case user = "users"
+    case album = "albums"
+    case photo = "photos"
 }
 
 class NetworkDataHelper {
@@ -32,10 +32,10 @@ class NetworkDataHelper {
     
     
     func loadAllData() {
-        self.loadData(dataKind: .Post)
-        self.loadData(dataKind: .User)
-        self.loadData(dataKind: .Album)
-        self.loadData(dataKind: .Photo)
+        self.loadData(dataKind: .post)
+        self.loadData(dataKind: .user)
+        self.loadData(dataKind: .album)
+        self.loadData(dataKind: .photo)
     }
     
     
@@ -71,7 +71,7 @@ class NetworkDataHelper {
     }
 
 
-    //Process album JSON
+    //Process JSON data to objects
     //
     func loadJSON(dataKind: DataKind) {
         print("loading JSON of \(dataKind.rawValue)!")
