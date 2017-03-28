@@ -29,6 +29,8 @@
 		F0655B7B1E8952B300B4C189 /* UserAddressGeo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0655B6F1E8952B300B4C189 /* UserAddressGeo+CoreDataProperties.swift */; };
 		F0655B7C1E8952B300B4C189 /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0655B701E8952B300B4C189 /* Photo+CoreDataClass.swift */; };
 		F0655B7D1E8952B300B4C189 /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0655B711E8952B300B4C189 /* Photo+CoreDataProperties.swift */; };
+		F0655B811E89852400B4C189 /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0655B801E89852400B4C189 /* MasterTableViewController.swift */; };
+		F0655B831E8A434E00B4C189 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0655B821E8A434E00B4C189 /* Debug.swift */; };
 		F085531C1E8942340087222D /* DBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F085531B1E8942340087222D /* DBController.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		F0655B6F1E8952B300B4C189 /* UserAddressGeo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserAddressGeo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F0655B701E8952B300B4C189 /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F0655B711E8952B300B4C189 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F0655B801E89852400B4C189 /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
+		F0655B821E8A434E00B4C189 /* Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
 		F085531B1E8942340087222D /* DBController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,10 +96,12 @@
 			children = (
 				F0564B751E859FB0006E8BEA /* AppDelegate.swift */,
 				F085531B1E8942340087222D /* DBController.swift */,
-				F0564B771E859FB0006E8BEA /* ViewController.swift */,
 				F0564B8A1E85A758006E8BEA /* NetworkDataHelper.swift */,
+				F0564B771E859FB0006E8BEA /* ViewController.swift */,
+				F0655B801E89852400B4C189 /* MasterTableViewController.swift */,
 				F0564BAF1E86801A006E8BEA /* MySplitViewController.swift */,
 				F0564B791E859FB0006E8BEA /* Main.storyboard */,
+				F0655B821E8A434E00B4C189 /* Debug.swift */,
 				F0564B7F1E859FB0006E8BEA /* Assets.xcassets */,
 				F0564B811E859FB0006E8BEA /* LaunchScreen.storyboard */,
 				F0564B841E859FB0006E8BEA /* Info.plist */,
@@ -212,6 +218,8 @@
 				F0655B651E89509900B4C189 /* UserPost+CoreDataProperties.swift in Sources */,
 				F0655B641E89509900B4C189 /* UserPost+CoreDataClass.swift in Sources */,
 				F0655B761E8952B300B4C189 /* UserAddress+CoreDataClass.swift in Sources */,
+				F0655B831E8A434E00B4C189 /* Debug.swift in Sources */,
+				F0655B811E89852400B4C189 /* MasterTableViewController.swift in Sources */,
 				F0655B771E8952B300B4C189 /* UserAddress+CoreDataProperties.swift in Sources */,
 				F0655B7A1E8952B300B4C189 /* UserAddressGeo+CoreDataClass.swift in Sources */,
 				F0655B7B1E8952B300B4C189 /* UserAddressGeo+CoreDataProperties.swift in Sources */,

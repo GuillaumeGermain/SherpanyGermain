@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 enum DataKind:String {
     case post = "posts"
@@ -49,9 +50,11 @@ class NetworkDataHelper {
             if let responseVar = response, let dataVar = data {
                 
                 //Debugging
-//                print("***********") //response status
-//                print(responseVar)
-                if false {
+                if Debug.netStatus {
+                    print("***********") //response status
+                    print(responseVar)
+                }
+                if Debug.netData {
                     let returnString = String(data: dataVar, encoding: .utf8)!
                     print("***********")
                     print(dataKind.rawValue)
@@ -79,9 +82,18 @@ class NetworkDataHelper {
             //let readOptions = JSONSerialization.ReadingOptions.mutableContainers
             do {
                 let theResult = try JSONSerialization.jsonObject(with: theData, options: []) as! [AnyObject]
-                print("------------")
-                print(theResult)
+                
+                //Debugging
+                if Debug.decodeJSON {
+                    print("------------")
+                    print(theResult)
+                }
+                
+                //Save data in CoreData
                 saveData(dataKind: dataKind, JSONObject: theResult)
+                
+                //refresh the data in the GUI
+                refreshScreen()
             } catch {
                 print(error)
             }
@@ -114,7 +126,7 @@ class NetworkDataHelper {
                 aUserPost.body = aDict["body"] as? String
 //                aUserPost.id = aDict["id"]
                 aUserPost.title = aDict["title"]  as? String
-//                aUserPost.userID = aDict["UserId"]
+//                aUserPost.userId = aDict["UserId"]
             }
         case .photo:
             break
@@ -126,6 +138,7 @@ class NetworkDataHelper {
 //                anAlbum.userId = aDict["userId"]
             }
         }
+        
         
 //Code to fetch data
         /*
@@ -146,6 +159,16 @@ class NetworkDataHelper {
          }
          */
     }
+
+    func refreshScreen() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "MasterVC")
+        
+        //Debug what do we get
+        print("the controller that we get: " + String(describing: controller))
+        
+    }
+    
     
     func saveUser() {
         

@@ -20,7 +20,7 @@ extension UserPost {
     @NSManaged public var body: String?
     @NSManaged public var id: Int32
     @NSManaged public var title: String?
-    @NSManaged public var userID: Int32
+    @NSManaged public var userId: Int32
     @NSManaged public var publishedBy: User?
 
 }

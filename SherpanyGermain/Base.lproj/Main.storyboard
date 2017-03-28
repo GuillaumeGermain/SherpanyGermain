@@ -39,13 +39,13 @@
         <!--Challenge Accepted!-->
         <scene sceneID="o5t-vN-2PJ">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="j49-YI-j3f" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MasterVC" clearsSelectionOnViewWillAppear="NO" id="j49-YI-j3f" customClass="MasterTableViewController" customModule="SherpanyGermain" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="n0R-rK-Wv9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="PIQ-Yt-moU">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserPostCell" id="PIQ-Yt-moU">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PIQ-Yt-moU" id="SkI-f3-KBr">
@@ -55,8 +55,8 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="j49-YI-j3f" id="oQA-bz-UKu"/>
-                            <outlet property="delegate" destination="j49-YI-j3f" id="z1x-8R-jza"/>
+                            <outlet property="dataSource" destination="j49-YI-j3f" id="NrJ-TL-ZYv"/>
+                            <outlet property="delegate" destination="j49-YI-j3f" id="uRr-FI-pHk"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Challenge Accepted!" id="jOV-4E-YJ4"/>
